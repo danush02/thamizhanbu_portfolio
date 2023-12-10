@@ -296,3 +296,12 @@ span {
     opacity: 100;
   }
 }
+
+.navbar{
+  &.top{
+    background: transparent;
+  }
+  &.fixed {
+    background: rgba(#000, .8);
+  }
+}
