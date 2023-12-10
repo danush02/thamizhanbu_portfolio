@@ -82,8 +82,8 @@ body {
 
 .lead {
     margin-bottom: 20px;
-    font-size: 16px;
-    font-weight: 200;
+    font-size: 20px;
+    font-weight: 500;
     line-height: 1.4;
 }
 
@@ -133,7 +133,7 @@ a {
 .contents{
     align-items: center;
     text-align: center;
-    background-image: url('images/head_banner.jpeg');
+    background-image: url('images/body_img.jpeg');
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
@@ -146,7 +146,7 @@ a {
     background-color: white;
     mix-blend-mode: screen;
     color:black;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 800;
 }
 .details{
@@ -177,5 +177,122 @@ button{
 }
 .expandexp:hover + .experience{
     display: block;
+    transition: display 0.5s ease;
 }
 
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i, 600, 600,700");
+.tech-skills{
+    padding: 0;
+    background:#fff;
+    margin: 0;
+    color: #000000;
+    min-width: 90vw;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span {
+  font-weight: 600;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.l1,
+.l2,
+.l3,
+.l4,
+.l5,
+.l6{
+  opacity: 0;
+}
+
+.skills-tab {
+  margin: 0.2rem auto;
+  font-size: 5vh;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+.skills-tab#container {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 95vw;
+  padding: 0.5rem 4rem;
+  filter: grayscale(100%);
+  margin: auto;
+  transition-duration: 0.5s;
+}
+.skills-tab#container:hover {
+  color: #ff6d00;
+  cursor: pointer;
+  filter: grayscale(0%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.skills-tab.skill-bar {
+  margin: 1.5rem 0 0 0;
+  width: 25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.skills-tab.skill-level {
+  margin: 0.6rem 0;
+  flex-direction: row;
+}
+.skills-tab.dot {
+  opacity: 1;
+  margin: 0.2rem 0.2rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  border: 0.1rem #ff9e00 solid;
+}
+.skills-tab.fill {
+  background: #ff6d00;
+}
+.skills-tab .l1 {
+  background: #ff6d00;
+  border: 0.1rem #ff6d00 solid;
+}
+.skills-tab .l2 {
+  background: #ff7900;
+  border: 0.1rem #ff7900 solid;
+}
+.skills-tab .l3 {
+  background: #ff8500;
+  border: 0.1rem #ff8500 solid;
+}
+.skills-tab .l4 {
+  background: #ff9100;
+  border: 0.1rem #ff9100 solid;
+}
+.skills-tab .l5 {
+  background: #ff9e00;
+  border: 0.1rem #ff9e00 solid;
+}
+.skills-tab .l6 {
+  background: #ff9e00;
+  border: 0.1rem #ff9e00 solid;
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
